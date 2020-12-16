@@ -19,4 +19,9 @@ class Node<V> {
     public void setNextNode(Node nextNode) {
         this.nextNode = nextNode;
     }
+
+    @Override
+    public String toString() {
+        return object.toString();
+    }
 }
