@@ -1,4 +1,7 @@
+import Hashing.Node;
 import Hashing.OpenHash;
+
+import javax.sound.midi.Soundbank;
 
 public class OpenHashTest {
     public static void run() {
@@ -14,6 +17,9 @@ public class OpenHashTest {
             openHash.insert(new MyString(NumberArray[i]), new MyString(NumberArray[i]));
             openHash.insert(new MyString(NumberArray[i]), new MyString(EnglishNumberArray[i]));
         }
+
+        Node node = openHash.search(new MyString(NumberArray[3]));
+        System.out.println(node.toString());
 
         System.out.println(openHash.toString());
 
