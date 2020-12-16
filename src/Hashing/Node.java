@@ -1,6 +1,6 @@
 package Hashing;
 
-public class Node<V> {
+class Node<V> {
     private V object = null;
     private Node nextNode = null;
 
@@ -18,10 +18,5 @@ public class Node<V> {
 
     public void setNextNode(Node nextNode) {
         this.nextNode = nextNode;
-    }
-
-    @Override
-    public String toString() {
-        return object.toString();
     }
 }
